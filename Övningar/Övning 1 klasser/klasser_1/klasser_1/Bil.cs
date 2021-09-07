@@ -18,5 +18,25 @@ namespace klasser_1
             arsmodell = _arsmodell;
             mil = _mil;
         }
+
+        public void setMil(double _m)
+        {
+            mil = _m;
+        }
+
+        public void setArsmodell(int _am)
+        {
+            arsmodell = _am;
+        }
+
+        public void setMarke(string _ma)
+        {
+            marke = _ma;
+        }
+
+        public string returnInfo()
+        {
+            return this.marke + "\t" + this.arsmodell.ToString() + "\t" + this.mil.ToString();
+        }
     }
 }
