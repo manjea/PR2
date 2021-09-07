@@ -1,0 +1,10 @@
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\bin\Debug\klasser_1.exe.config
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\bin\Debug\klasser_1.exe
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\bin\Debug\klasser_1.pdb
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\obj\Debug\klasser_1.csproj.AssemblyReference.cache
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\obj\Debug\klasser_1.Form1.resources
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\obj\Debug\klasser_1.Properties.Resources.resources
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\obj\Debug\klasser_1.csproj.GenerateResource.cache
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\obj\Debug\klasser_1.csproj.CoreCompileInputs.cache
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\obj\Debug\klasser_1.exe
+C:\Users\manjea\Documents\GitHub\PR2\Övningar\Övning 1 klasser\klasser_1\klasser_1\obj\Debug\klasser_1.pdb
