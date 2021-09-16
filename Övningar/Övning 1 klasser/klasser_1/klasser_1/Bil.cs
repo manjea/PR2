@@ -14,10 +14,21 @@ namespace klasser_1
 
         public Bil(string _marke, int _arsmodell, double _mil)
         {
-            marke = _marke;
-            arsmodell = _arsmodell;
-            mil = _mil;
+            try {
+                marke = _marke;
+                arsmodell = _arsmodell;
+                mil = _mil;
+                if (string.IsNullOrWhiteSpace(marke) || string.IsNullOrWhiteSpace(arsmodell.ToString()) || string.IsNullOrWhiteSpace(mil.ToString()))
+                {
+                    throw new Exception("Fel, Skriv in riktiga värden!");
+                }
+            }
+            catch(Exception _ex)
+            {
+                Console.WriteLine(_ex);
+            }
         }
+
 
         public void setMil(double _m)
         {
@@ -38,5 +49,7 @@ namespace klasser_1
         {
             return this.marke + "\t" + this.arsmodell.ToString() + "\t" + this.mil.ToString();
         }
+
+
     }
 }

@@ -42,7 +42,31 @@ namespace klasser_1
 
         private void btnAndra_Click(object sender, EventArgs e)
         {
-            pnlEgenskaper.Visible = true;
+            Egenskaper egenskaper = new Egenskaper(lbxBilar.SelectedIndex);
+            DialogResult d = egenskaper.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                bilLista[lbxBilar.SelectedIndex].setMarke(egenskaper.ReturnValue1);
+                bilLista[lbxBilar.SelectedIndex].setArsmodell(egenskaper.ReturnValue2);
+                bilLista[lbxBilar.SelectedIndex].setMil(egenskaper.ReturnValue3);
+
+                lbxBilar.Items.Clear();
+
+                for (int i = 0; i < bilLista.Count; i++)
+                {
+                    lbxBilar.Items.Add(bilLista[i].returnInfo());
+                }
+            }
+            else if (d == DialogResult.Cancel)
+            {
+                MessageBox.Show("CANCEL!");
+            }
+            else
+            {
+                Console.WriteLine("wut");
+            }
+
+            //pnlEgenskaper.Visible = true;
         }
 
         private void btnAndraEgenskaper_Click(object sender, EventArgs e)
@@ -52,11 +76,11 @@ namespace klasser_1
             string m;
             int am;
             double km;
+            int index = lbxBilar.SelectedIndex;
 
-
+            /*
             try
             {
-                int index = lbxBilar.SelectedIndex;
                 km = double.Parse(nyaMil.Text);
 
                 bilLista[index].setMil(km);
@@ -73,7 +97,6 @@ namespace klasser_1
             }
             try
             {
-                int index = lbxBilar.SelectedIndex;
                 am = Int32.Parse(txbNyAm.Text);
 
                 bilLista[index].setArsmodell(am);
@@ -90,7 +113,6 @@ namespace klasser_1
             }
             try
             {
-                int index = lbxBilar.SelectedIndex;
                 m = tbxNyttMarke.Text.ToString();
                 if (m != "")
                 {
@@ -109,6 +131,40 @@ namespace klasser_1
             }
 
             pnlEgenskaper.Visible = false;
+            */
+        }
+
+        private void bortBtn_Click(object sender, EventArgs e)
+        {
+            int index = lbxBilar.SelectedIndex;
+
+            try
+            {
+                bilLista.RemoveAt(index);
+                lbxBilar.Items.Clear();
+                for (int i = 0; i < bilLista.Count; i++)
+                {
+                    lbxBilar.Items.Add(bilLista[i].returnInfo());
+                }
+
+            }
+            catch (Exception _ex)
+            {
+
+            }
+        }
+
+        private void btnAvbryt_Click(object sender, EventArgs e)
+        {
+            /*
+            if (pnlEgenskaper.Visible)
+            {
+                pnlEgenskaper.Visible = false;
+                tbxNyttMarke.Text = "";
+                txbNyAm.Text = "";
+                nyaMil.Text = "";
+            }
+            */
         }
     }
 }
