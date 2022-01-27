@@ -56,6 +56,12 @@
 /processorParam:TextureFormat=Compressed
 /build:font.spritefont
 
+#begin hitSnd.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:hitSnd.wav
+
 #begin jump.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -67,6 +73,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:jump.png
+
+#begin jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:jump.wav;jumpSnd.wav
+
+#begin jumpSnd2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:jumpSnd2.wav
 
 #begin layer1.png
 /importer:TextureImporter

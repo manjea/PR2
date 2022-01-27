@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/okej0/source/repos/footsies/footsies/Content/normal.png</SourceFile>
-  <SourceTime>2018-01-17T09:44:52.2525014+01:00</SourceTime>
-  <DestFile>C:/Users/okej0/source/repos/footsies/footsies/Content/bin/Windows/Content/normal.xnb</DestFile>
-  <DestTime>2022-01-13T13:18:02.5242226+01:00</DestTime>
+  <SourceFile>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/normal.png</SourceFile>
+  <SourceTime>2022-01-27T11:49:25.897135+01:00</SourceTime>
+  <DestFile>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/bin/Windows/Content/normal.xnb</DestFile>
+  <DestTime>2022-01-27T11:53:34.9338743+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

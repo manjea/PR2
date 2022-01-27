@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
 using System;
 using System.Collections.Generic;
 
@@ -42,11 +44,17 @@ namespace footsies
         private bool isPlaying;
 
         private const int START_Y = 420;
+
+        Song song;
+
+        List<SoundEffect> soundEffects;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
+            IsMouseVisible = false;
+            soundEffects = new List<SoundEffect>();
         }
 
         protected override void Initialize()
@@ -72,6 +80,16 @@ namespace footsies
             layer2 = new ParallaxTexture(layer2Texture, 300);
             layer3 = new ParallaxTexture(layer3Texture, 180);
 
+            /*song = Content.Load<Song>("prepare");
+            MediaPlayer.Play(song);
+            MediaPlayer.IsRepeating = true;
+            MediaPlayer.MediaStateChanged += MediaPlayer_MediaStateChanged;*/
+
+
+            soundEffects.Add(Content.Load<SoundEffect>("jumpSnd"));
+            soundEffects.Add(Content.Load<SoundEffect>("jumpSnd2"));
+            soundEffects.Add(Content.Load<SoundEffect>("hitSnd"));
+
             font = Content.Load<SpriteFont>("font");
 
             normalTexture = Content.Load<Texture2D>("normal");
@@ -81,6 +99,12 @@ namespace footsies
 
         }
 
+        void MediaPlayer_MediaStateChanged(object sender, System.EventArgs e)
+        {
+            // 0.0f is silent, 1.0f is full volume
+            MediaPlayer.Volume -= 0.1f;
+            MediaPlayer.Play(song);
+        }
 
         protected override void Update(GameTime gameTime)
         {
@@ -119,6 +143,7 @@ namespace footsies
             if (state.IsKeyDown(Keys.W) && !isJumping)
             {
                 speed = new Vector2(0, -2f);
+                soundEffects[prng.Next(0,2)].Play();
                 isJumping = true;
             }
             if (state.IsKeyDown(Keys.S) && !isJumping)
@@ -176,8 +201,12 @@ namespace footsies
                     Rectangle r1 = Normalize(playerBox, collision);
                     Rectangle r2 = Normalize(fireballBox, collision);
                     hit = TestCollision(currentTexture, r1, fireballTexture, r2);
-                    if(hit)
+                    if (hit)
+                    {
+                        soundEffects[1].Play();
                         isPlaying = false;
+
+                    }
                 }
             }
 

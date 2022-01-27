@@ -7380,19 +7380,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\okej0\\.nuget\\packages\\": {}
+    "C:\\Users\\manjea\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\okej0\\source\\repos\\footsies\\footsies\\footsies.csproj",
+      "projectUniqueName": "C:\\Users\\manjea\\Desktop\\git\\PR2\\footsies\\footsies\\footsies.csproj",
       "projectName": "footsies",
-      "projectPath": "C:\\Users\\okej0\\source\\repos\\footsies\\footsies\\footsies.csproj",
-      "packagesPath": "C:\\Users\\okej0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\okej0\\source\\repos\\footsies\\footsies\\obj\\",
+      "projectPath": "C:\\Users\\manjea\\Desktop\\git\\PR2\\footsies\\footsies\\footsies.csproj",
+      "packagesPath": "C:\\Users\\manjea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\manjea\\Desktop\\git\\PR2\\footsies\\footsies\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\okej0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\manjea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7445,7 +7445,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

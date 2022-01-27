@@ -4,21 +4,27 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/background.png</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/crouch.png</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/fireball.png</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/font.spritefont</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/jump.png</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/layer1.png</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/layer2.png</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/layer3.png</File>
-    <File>C:/Users/okej0/source/repos/footsies/footsies/Content/normal.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/background.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/crouch.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/fireball.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/font.spritefont</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/hitSnd.wav</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/jump.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/jump.wav</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/jumpSnd2.wav</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/layer1.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/layer2.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/layer3.png</File>
+    <File>C:/Users/manjea/Desktop/git/PR2/footsies/footsies/Content/normal.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>jumpSnd.wav</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
